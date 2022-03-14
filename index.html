@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>DirectlyApply code test</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+    <body class="m-4 flex">
+        <main>
+            <h1 class="mb-2">DirectlyApply code test</h1>
+            <h3 class="mb-1">
+                Place raw text in the textarea to convert it to formatted HTML
+            </h3>
+            <form id="submitTextForm">
+                <div>
+                    <textarea
+                        class="border-2 mb-1 p-2"
+                        id="text"
+                        cols="100"
+                        rows="15"
+                    ></textarea>
+                </div>
+                <button
+                    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                    type="submit"
+                >
+                    Convert text to HTML
+                </button>
+            </form>
+        </main>
+        <div class="ml-3" id="output"></div>
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.0.3/showdown.min.js"
+            integrity="sha512-vx8rJNrYIZPDr290AV2tL04x0CKjLHSnTXrHMeb1kqbhfGwBnclPDOWIWxRiVS6Oe1oGzk5MzNz/eLzVku30kg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+            integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
